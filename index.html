@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Xejuyuj</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tipografia.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/animaciones.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="navbar-logo">Casa Xejuyuj</a>
+        <ul class="navbar-links">
+            <li><a href="#precio">Tarifa</a></li>
+            <li><a href="#reseña">Reseñas</a></li>
+            <li><a href="#habitaciones">Habitaciones</a></li>
+            <li><a href="#reservar">Reservar</a></li>
+        </ul>
+        <button class="btn-menu">☰</button>
+    </nav>
+    <section class="home">
+        <div class="hero-contendio">
+            <span class="texto-destacado">Bievendios</span>
+            <h1 class="titulo-degradado">Tu hogar lejos del hogar</h1>
+            <p>Hospedate con nosotros, para que tus vacaciones se conviertan en una experiencia.</p>
+        </div>
+        <div class="home-botones">
+            <a href="#reservar" class="btn btn-primario">¡Haz tu reservación!</a>
+            <a href="#habitaciones" class="btn btn-secundario">Habitaciones</a>
+        </div>
+    </section>
+    <section id="reseña" class="section">
+        <h2>Lo que dicen nuestros huéspedes</h2>
+        <div class="grid-tarjetas">
+            <article class="tarjeta">
+                <div class="tarjeta-icono">💬</div>
+                <div class="tarjeta-cuerpo">
+                    <h3>Comentarios de Airbnb</h3>
+                    <p>Tenemos un promedio de 4.83 estrellas en Airbnb.</p>
+                </div>
+            </article>
+            <article class="tarjeta">
+                <div class="tarjeta-icono">🏨</div>
+                <div class="tarjeta-cuerpo">
+                    <h3>Comentarios de VRBO</h3>
+                    <p>Únicos en lograr anuncio preferido por los huéspedes 3 años seguidos.</p>
+                </div>
+            </article>
+            <article class="tarjeta">
+                <div class="tarjeta-icono">🏊‍</div>
+                <div class="tarjeta-cuerpo">
+                    <h3>"Infinity Pool"</h3>
+                    <p>Piscina climatizada, con una hermosa vista a los volcanes y el lago.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="precio">
+        <h2>Nuestras tarifas</h2>
+        <div class="tabla-contedor">
+            <table class="tabla-datos">
+                <thead>
+                    <tr>
+                        <th>Fecha Inicio</th>
+                        <th>Fecha Fin</th>
+                        <th>Temporada</th>
+                        <th>Precio por Noche</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mayo</td>
+                        <td>Octubre</td>
+                        <td>Low Season</td>
+                        <td>$295.00 USD</td>
+                    </tr>
+                    <tr>
+                        <td>Noviembre</td>
+                        <td>Abril</td>
+                        <td>High Season</td>
+                        <td>$330.00 USD</td>
+                    </tr>
+                    <tr>
+                        <td>Noche Buena</td>
+                        <td>Año Nuevo</td>
+                        <td>Holiday</td>
+                        <td>$350.00 USD</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Semana Santa</td>
+                        <td>Easter</td>
+                        <td>$350.00 USD</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="reseñas">
+        <h2>Los últimos comentarios de nuestros húespedes</h2>
+        <div class="taggbox" style="width:100%;height:100%;overflow:auto;" data-widget-id="322853" data-website="1"></div>
+        <script src="https://widget.taggbox.com/embed.min.js" type="text/javascript"></script>
+    </section>
+    <section id="habitaciones">
+        <figure>
+            <img src="./img/room1.jpg" width="720" />
+            <figcaption>Habitación Principal</figcaption>
+        </figure>
+        <figure>
+            <img src="./img/room2.jpg" height="720" />
+            <figcaption>Habitación con cama Queen</figcaption>
+        </figure>
+        <figure>
+            <img src="./img/room3.jpg" width="720" />
+            <figcaption>Habitación con 2 camas</figcaption>
+        </figure>
+    </section>
+    <section id="reservar" class="section">
+        <h2>Consulta Disponibilidad</h2>
+        <form class="formulario" action="mailto:aaron.salguero@gmail.com" method="post" enctype="text/plain">
+            <div class="campo">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" placeholder="Tu nombre" required />
+            </div>
+            <div class="campo">
+                <label for="email">Correo Electronico</label>
+                <input type="email" id="email" placeholder="correo@ejemplo.com" required />
+            </div>
+            <div class="campo">
+                <label for="ingreso">Fecha de Ingreso</label>
+                <input type="date" id="checkin" required />
+            </div>
+            <div class="campo">
+                <label for="salida">Fecha de Egreso</label>
+                <input type="date" id="checkout" required />
+            </div>
+            <button type="submit" class="btn-enviar">Enviar Solicitud</button>
+        </form>
+    </section>
+</body>
+</html>
