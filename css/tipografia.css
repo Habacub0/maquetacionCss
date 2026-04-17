@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock+SC&family=Story+Script&display=swap');
+
+.story-script-regular {
+    font-family: "Story Script", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.overlock-sc-regular {
+    font-family: "Overlock SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family:'Story Script', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: ghostwhite;
+
+}
+h1,h2,h3 {
+    font-family:'Overlock SC', sans-serif;
+    font-weight:700;
+    line-height:1.2;
+    margin-bottom: 0.75rem;
+    color: darkgreen;
+}
+
+p {
+    font-size:1rem;
+    max-width:65ch;
+    margin-bottom:1rem;
+    color: darkblue;
+}
+
+.texto-destacado {
+    font-family:'Story Script', Arial;
+    font-size:3rem;
+    letter-spacing:0.5rem;
+    text-transform: uppercase;
+    color: rgb(10, 12, 126)
+}
